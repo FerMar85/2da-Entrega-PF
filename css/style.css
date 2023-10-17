@@ -59,27 +59,26 @@ header .menu-indice a{
     font-weight: 600;
     padding: 12px 24px;
     border-radius: 8px;
-    }  
+    } 
+
+
+*/noticias/
 
 
 
-.body img{
-    background-repeat: round;
-    background-size: 300px;
-
-    }
-#BannerNoticias h1{
+    #BannerNoticias h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    text-align: center;
-    font-size: 70px;
+    color: red;
+    display: flex;
+    align-items: center;
+    font-size: 90px;
     margin-bottom: 20px;
     margin-top: 100px;
     font-weight: 300;
-} 
+    } 
     #BannerNoticias p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
+    color: red;
     font-size: medium;
     text-align: justify;
     padding: 40px 40px 40px 40px;
@@ -96,7 +95,12 @@ header .menu-indice a{
     padding: 9px 18px;
     border-radius: 8px;
     }
- .Noticias-footer {
+
+
+
+
+
+    .Noticias_footer {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
@@ -104,7 +108,8 @@ header .menu-indice a{
     text-align: center;
     bottom: 0;
     width: 100%;
- }
+    }
+
 */ hoja de productos*/
 
 .tarjeta_productos {
