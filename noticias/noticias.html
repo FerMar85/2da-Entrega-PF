@@ -1,45 +1,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto final</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut" href="../imagenes/poseidon.webp">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>proyecto final</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut" href="../imagenes/poseidon.webp">
 </head>
 
-<body>
-    <img src="../imagenes/noticias.jpg" alt="logo">
+<body class="cuerpo_noticias">
 
-    <header>
-        
-             <section id="BannerNoticias">
+  <header class="cabezas_Noticia">
 
-                 <h1>Noticias</h1>
-                 <p class="text-center">Los investigadores calculan que la pérdida media de agua en Europa ha sido de 84
-                gigatoneladas al año
-                desde principios del siglo XXI. </i>Según Famiglietti, se trata de una cifra alarmante,
-                aproximadamente igual a toda el agua del lago Ontario o cinco veces el caudal medio anual del río
-                Colorado a través del Gran Cañón. La escala (un gigatón representa mil millones de toneladas de agua) es
-                casi imposible de asimilar. Pero esa es la escala a la que se está produciendo el cambio climático.
+    <h1>Noticias </h1>
 
-                La causa subyacente está clara, afirma. Demasiada poca agua en algunos lugares y demasiada en otros, "el
-                agua es el mensajero que transmite las malas noticias del cambio climático" a la población de todo el
-                mundo. Pero la extracción excesiva de agua subterránea desempeña un papel importante en las pérdidas</p>
+    <a href="../index.html">Inicio</a>
+  </header>
 
-            <a href="../index.html">inicio</a>
+  <main class="Medio_Noticias">
+    <h2> Imagenes</h2>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../imagenes/donaciones agua2.jpg" height="400" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/donaciones agua3.jpg" height="400" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/donaciones agua4.jpg" height="400" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <h1> Novedades relevantes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita odit consectetur sunt adipisci excepturi neque
+      dignissimos ratione tempora earum maiores doloremque, voluptatum perferendis recusandae ea quo! Minima voluptatem
+      libero dignissimos.</p>
+      <div class="card" style="width: 18rem;">
+        <img src="../imagenes/noticias.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">An item</li>
+          <li class="list-group-item">A second item</li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+
+  </main>
+  <footer class="Noticias_footer">
+    Copyright - Todos los derechos reservados por la empresa - 2023
+  </footer>
 
 
-            </section>
-    </header>
-   
-    <footer class="Noticias_footer">
-        copyright 2023 - Todos los derechos reservamos - por la empresa.
-    </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 </body>
 

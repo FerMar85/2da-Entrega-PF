@@ -4,7 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header.Cabeza_Inicio {
     padding: 15px 0px;
     position: absolute;
     z-index: 300000;
@@ -13,7 +13,7 @@ header {
     left: 0;
      
 }
-header ul{
+.Ul_Indice{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,7 +32,8 @@ header .menu-indice a{
     background-image:url(../imagenes/pexels-pixabay-36717.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 265px 0px;
+    padding: 250px 0px;
+    width: 100%;
 
 
 }
@@ -60,46 +61,62 @@ header .menu-indice a{
     padding: 12px 24px;
     border-radius: 8px;
     } 
-
-
-*/noticias/
-
-
-
-    #BannerNoticias h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
-    display: flex;
-    align-items: center;
-    font-size: 90px;
-    margin-bottom: 20px;
-    margin-top: 100px;
-    font-weight: 300;
-    } 
-    #BannerNoticias p{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: red;
-    font-size: medium;
-    text-align: justify;
-    padding: 40px 40px 40px 40px;
-
-    }
-    #BannerNoticias a{
-    font-family: Arial, sans-serif;
-    background-color: blue;
-    color:black;
+footer.Pie_Inicio{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
-    margin-bottom: 20px;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 9px 18px;
-    border-radius: 8px;
-    }
+    color:whitesmoke;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+
+}
 
 
+*/ noticias--
 
+.cuerpo_Noticias{
+    display: grip;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75px 400px 50px;
+}
 
+.cabezas_Noticia{
+   height: 75px;
+   width: 100%;
+   background-color: aquamarine;
+   padding: 12px 0px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
 
+}
+
+.cabezas_Noticia h1{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    margin-left: 12px;
+    color: black;
+    } 
+    .cabezas_Noticia a{
+        font-family: Arial, sans-serif;
+        color:green;
+        font-size: 30px;
+        margin-bottom: 15px;
+        text-decoration: none;
+        font-weight: 600;
+        padding: 12px 24px;
+        border-radius: 50%;
+        
+    } 
+
+.Medio_Noticias{
+    background-color: blanchedalmond;
+    font-size: 18px;
+
+} 
     .Noticias_footer {
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -112,77 +129,124 @@ header .menu-indice a{
 
 */ hoja de productos*/
 
-.tarjeta_productos {
-    background-image: url(../imagenes/empresa1.jpg);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+body.cuerpo_productos {
+    display: grip;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 75px 300PX 50px;
+    grid-template-areas:
+    "main header header" 
+    "main main main"
+    "footer footer footer";
+    column-gap: 25px;
+    row-gap: 15px;
 }
+ header.Cabeza_Productos{
+    grid-area: header;
+}
+.Cabeza_Productos{
+   height: 75px;
+   width: 100%;
+   position: absolute;
+   background-color: black;
+   color: antiquewhite;
+   padding: 28px 0px;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+}
+.Cabeza_Productos a{
+    font-family: Arial, sans-serif;
+    color:green;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50%;
+}
+main.main_productos{
+    grid-area: main;
+}
+
+.Main_Productos a{
+    font-family: Arial, sans-serif;
+    color:green;
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 50%;
+}
+.card1{
+    background-color:lightsalmon;
+    color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer.Pie_productos{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color:whitesmoke;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+
+*/ hoja de proyecto*/
+
+.Cuerpo_Proyecto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto ;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+    column-gap: 25px;
+    row-gap: 15px;
+    
+
+}
+header.Cabeza_Proyecto{
+    background-color: brown;
+    grid-area: header;
+}
+nav.Nav_Proyecto{
+    background-color: aqua;
+    grid-area: nav;
+
+}
+main.Main_Proyecto{
+    background-color: red;
+    grid-area: main;
+    
+}
+
+footer.Pie_proyecto{
+    background-color: blue;
+    grid-area: footer;
+}
+header, nav, main, footer {
+    padding: 15px;
+    font-size: 20px;
+
+}
+
+
 
 
 
  
-
-*/ hoja de proyecto*/
-
-.proyecto h1{
-    font-family: 'Times New Roman', Times, serif;
-    background-color: aqua;
-    color: red;
-    }
-
-    .proyecto h3{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        background-color: bisque;
-        color: black;
-        text-align: justify;
-    }
-
-.contenedor1 img{
-    display: flex;
-    width: 300px;
-    height: 300px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
- }
-
- .contenedor2 iframe{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
- }
-.boton2 a{
-    
-    background-color:coral ;
-    color: red;
-    font-family: Arial, sans-serif;
-    font-size: 30px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    font-weight: 300;
-    padding: 12px 24px;
-    border-radius: 8px;
-    position: absolute;
-}
-
-
-
- footer.footerproyecto{
-    display: flex;
-    text-align: center;
-    bottom: 0%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 10px;
-    background-color: blueviolet;
-    color: black;
-    margin-bottom: auto;
-    position: absolute;
- }
+ */ hoja servicios ****/
 .servicios h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 30;
-    background-color: blanchedalmond;
-    color: black;
+    font-size:30;
+    background-color:blanchedalmond;
+    color:black;
 }
 header.servicios ul{
     display: flex;
