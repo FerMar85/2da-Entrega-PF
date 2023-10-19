@@ -279,3 +279,19 @@ header.sobre h1{
     position: absolute;
     
 }
+/* media query - mobile*/
+@media (max-width:375px) and (orientation:portrait) {  
+    header.cabeza_inicio { 
+        
+        background-color:red;
+        
+        
+    }  
+    
+}
+/* Media Query - Tablet */
+@media (min-width:376px) and (max-width:992px){
+    header.cabeza_inicio {
+        background-color: blue;
+    }
+}
