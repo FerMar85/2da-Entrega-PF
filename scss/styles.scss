@@ -21,7 +21,7 @@
 }
 
 .main_inicio {
-    background-image: url(../imagenes/pexels-pixabay-36717.jpg);
+    background-image: url(../imagenes/inicio/fotoindex.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 200px 0px;
@@ -48,7 +48,7 @@
 
 .Footer {
     background-color: $color-footer;
-    padding: 50px 0;
+    padding: 80px 0;
     max-width: 100%;
     margin: 0 auto;
 
@@ -58,12 +58,12 @@
 
         .footer_links {
             width: 25%;
-            padding: 0 15px;
+            padding: 0px 15px;
 
             .link_h4 {
                 font-size: 20px;
                 color: aliceblue;
-                margin-bottom: 25px;
+                margin-bottom: 20px;
                 font-weight: 500;
                 border-bottom: 2px solid #00c3ff;
                 padding-bottom: 10px;
@@ -77,7 +77,7 @@
                 text-decoration: none;
                 color: white;
                 display: block;
-                margin-bottom: 15px;
+                margin-bottom: 10px;
                 transition: all .3s ease;
 
             }
@@ -91,10 +91,14 @@
 
             .social_link a {
                 display: inline-block;
-                min-height: 40px;
+                min-height: 40px 40px;
                 width: 40px;
+                background-color: blue;
+                margin: 10px 10px 10px 10px;
                 text-align: center;
-                color: #ffffff;
+                line-height: 10px;
+                border-radius: 25%;
+                color: whitesmoke;
                 transition: all .5s ease;
 
             }
@@ -109,15 +113,18 @@
     }
 }
 
-@media(max-width:991px) {
+@media(max-width:575px) {
+
     .footer_row {
-        text-align: center;
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+
+
     }
 
-    .footer_links {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+
+
 }
 
 
@@ -215,7 +222,8 @@
     text-align: center;
     margin-top: auto;
 }
-@media(max-width:576px) {
+
+/*@media(max-width:576px) {
    
        .footer_row {
 
@@ -229,7 +237,8 @@
         margin-bottom: 30px;
     }
 }
-@media (min-width:376px) and (max-width:992){
+@media (min-width:360px){
+
     .footer_row {
 
 
@@ -241,7 +250,7 @@
         width: 100%;
         margin-bottom: 30px;
     }
-}
+}*/
 
 // Productos ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -424,37 +433,39 @@
 
 //servicios ////////////////////////////////////////////////////////////////////////////////////////////////
 
-.Cuerpo_Servicios{
+.Cuerpo_Servicios {
     background-image: url(../fuentes/27530.png);
 
 
-    
+
     .Main_Ser {
         display: flex;
         flex-direction: column;
-        
-        h1{
+
+        h1 {
             font-size: 40px;
             text-align: center;
         }
-        p{
-        padding: 20px 20px;
-        text-align: left;
-        font-size: 18px;
-        
+
+        p {
+            padding: 20px 20px;
+            text-align: left;
+            font-size: 18px;
+
         }
-        h5{
+
+        h5 {
             font-size: 18px;
             text-align: left;
             padding: 20px 20px;
-            
+
         }
 
     }
 
     .main_servicios {
-    
-    
+
+
         .nav_main {
             background-color: $color-secundario;
 
@@ -469,21 +480,24 @@
         }
 
     }
-.carousel_serv{
-    display: flex;
-    justify-content:space-between;
-    text-align: left;
-    h5{
-        font-size: 24px;
-        font-weight: bold;
-    }
-    .card_serv{
-        text-decoration: none;
-        color: black;
-        width: 15px;
-        font-weight: bold;
-        
-         }
+
+    .carousel_serv {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+
+        h5 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card_serv {
+            text-decoration: none;
+            color: black;
+            width: 15px;
+            font-weight: bold;
+
+        }
     }
 }
 
@@ -533,10 +547,14 @@
 
             .social_link a {
                 display: inline-block;
-                min-height: 40px;
+                min-height: 40px 40px;
                 width: 40px;
+                background-color: blue;
+                margin: 10px 10px 10px 10px;
                 text-align: center;
-                color: #ffffff;
+                line-height: 10px;
+                border-radius: 25%;
+                color: whitesmoke;
                 transition: all .5s ease;
 
             }
@@ -545,7 +563,7 @@
 
                 background-color: black;
             }
-         }
+        }
 
     }
 }
